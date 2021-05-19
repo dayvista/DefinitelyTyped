@@ -203,7 +203,7 @@ declare namespace ReactGridLayout {
         /**
          * Defines custom component for resize handle
          */
-        resizeHandle?: React.ReactNode | ((resizeHandle: ResizeHandle) => React.ReactNode);
+        resizeHandle?: React.ReactNode | ((axis: ResizeHandle, ref: ReactRef<HTMLElement>) => React.ReactNode);
 
         /**
          * If set to false it will not call `onDrop()` callback.
